@@ -33,3 +33,9 @@ let getJohnOrders = () => {
 };
 
 // Start coding here
+const logResponse = res => console.log(res)
+
+getJohnProfile()
+.then(logResponse)
+.then(getJohnOrders)
+.then(logResponse)
